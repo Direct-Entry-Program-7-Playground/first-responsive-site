@@ -33,3 +33,68 @@ h6 {
   font-size: 0.67rem;
   font-weight: bolder;
 }
+/* Header  */
+
+body {
+  height: auto;
+  min-height: 100vh;
+}
+
+.header {
+  position: relative;
+  height: 80px;
+  padding: 10px 20px;
+  background-color: rgb(204, 222, 255);
+}
+
+.logo > img {
+  height: 60px;
+}
+
+.menu {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.menu > li {
+  display: inline-block;
+  background-color: rgb(38, 0, 253);
+  min-width: 100px;
+  padding: 10px 35px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.menu > li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/* Main */
+.main {
+  padding: 10px 20px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  padding: 17px 20px;
+  background-color: rgb(38, 0, 253);
+}
+
+.footer p {
+  text-align: center;
+  height: 16px;
+  color: whitesmoke;
+}
