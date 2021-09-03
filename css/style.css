@@ -8,31 +8,22 @@
 h1 {
   font-size: 2rem;
   font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: bolder;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
-h3 {
-  font-size: 1.17rem;
-  font-weight: bolder;
+p {
+  line-height: normal;
+  margin-bottom: 5px;
 }
 
-h4 {
-  font-size: 1rem;
-  font-weight: bolder;
-}
-h5 {
-  font-size: 0.83rem;
-  font-weight: bolder;
-}
-
-h6 {
-  font-size: 0.67rem;
-  font-weight: bolder;
-}
 /* Header  */
 
 body {
@@ -41,10 +32,14 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   height: 80px;
   padding: 10px 20px;
-  background-color: rgb(204, 222, 255);
+  background-color: rgb(241, 246, 255);
+  border-bottom: 2px solid blue;
+  z-index: 99;
+  top: 0;
 }
 
 .logo > img {
@@ -65,7 +60,7 @@ body {
 
 .menu > li {
   display: inline-block;
-  background-color: rgb(38, 0, 253);
+  background-color: blue;
   min-width: 100px;
   padding: 10px 35px;
   border-radius: 5px;
@@ -80,17 +75,26 @@ body {
 
 /* Main */
 .main {
+  position: relative;
+  margin-top: 80px;
   padding: 10px 20px;
+}
+
+.post {
+  background-color: rgb(252, 207, 207);
+  padding: 20px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
 }
 
 /* Footer */
 .footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 50px;
   bottom: 0;
   padding: 17px 20px;
-  background-color: rgb(38, 0, 253);
+  background-color: blue;
 }
 
 .footer p {
